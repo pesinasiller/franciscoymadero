@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+  function detectmob() {
+    if (navigator.userAgent.match(/Android/i) ||
+      navigator.userAgent.match(/webOS/i) ||
+      navigator.userAgent.match(/iPhone/i) ||
+      navigator.userAgent.match(/iPad/i) ||
+      navigator.userAgent.match(/iPod/i) ||
+      navigator.userAgent.match(/BlackBerry/i) ||
+      navigator.userAgent.match(/Windows Phone/i)
+    ) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  if (!detectmob()) {
+   window.location.replace("index.html");
+  }
+</script>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>&#x1F1F2;&#x1F1FD;&#x1F1FA;&#x1F1F8;Francisco y Madero</title>
+
+
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ 
+  <script src="libraries/p5.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+  <div id="p5_loading" style="background-color:mediumaquamarine;position:fixed;top: 0px;
+    left: 0px;width:100%;height:100%;z-index:100;">
+    <div class="centrado" style="text-align:center;z-index:200">
+     <img src="img/loader.gif">
+
+    </div>
+  </div>
+
+
+
+  <div class="covers" style="background-color:coral;">
+    <div class="noselect">
+      <div class="parallax-window noselect" >
+        <div class="parallax-slider noselect">
+          <img src="img/verdin.jpg" id="canv-cont" class="noselect" style="width:100%;">
+          <div id="canvas-holder" class="noselect" style="z-index:20;position:absolute;top:00px; left: 0px !important;"></div>
+        </div>
+      </div>
+    </div>
+  <script src="scripts/vehicle.js" type="text/javascript"></script>
+  <script src="scripts/main.js" type="text/javascript"></script>
+  <script src="scripts/sketch.js" type="text/javascript"></script>
+
+
+
+    <div style="height:1000px;background-color:coral;font-size:34px;z-index:40">
+      <div class="centrado">
+        A half-breed from Mexico and USA, Francisco y Madero creates a distinct blend of latin sampledelia mixed with Californian pop/surf/psychedelia. San Franciscan Jess Sylvester
+        <span class="lugares">
+          (<a href="https://soundcloud.com/catholic-guilt-records/sets/violent-change-violent-change" 
+          target="_blank">Violent Change</a>, 
+          <a href="https://soundcloud.com/marinero-2" 
+          target="_blank">Marinero</a>)
+          </span> and Mexican Carlos Pesina <span class="lugares">(<a href="http://micropapitas.bandcamp.com/" 
+          target="_blank">Micropapitas</a>,
+        <a href="http://losamparito.bandcamp.com" 
+          target="_blank">Los Amparito</a>)
+          </span> met in Mexico through a Myspace message in 2010, and have been making music together since through recording sessions passed through Dropbox.
+      </div>
+    </div>
+
+
+
+
+
+    <div class="parallax" style="background-image: url('img/cassette.jpg');">
+      <div class="centrado" style="text-align:center;">
+        <iframe src="https://open.spotify.com/embed/album/2zgEry3V6V0Tlx0fGIl9E2" width="80%" height="380" frameborder="0" allowtransparency="true"></iframe>
+      </div>
+    </div>
+
+
+
+
+
+    <div style="height:1000px;background-color:darkseagreen;font-size:34px">
+      <div class="centrado">
+        Un mestizaje entre México y Estados Unidos, el dúo Francisco y Madero crea una distintiva mezcla entre la sampledelia de sonidos latinos con el surf-pop de California. El sanfranciscano Jess Sylvester 
+        <span class="lugares">(<a href="https://soundcloud.com/catholic-guilt-records/sets/violent-change-violent-change" 
+          target="_blank">Violent Change</a>, 
+          <a href="https://soundcloud.com/marinero-2" 
+          target="_blank">Marinero</a>)</span> 
+          y el mexicano Carlos Pesina 
+        <span class="lugares">(<a href="http://micropapitas.bandcamp.com/" 
+          target="_blank">Micropapitas</a>,
+        <a href="http://losamparito.bandcamp.com" 
+          target="_blank">Los Amparito</a>)</span> se conocieron en México a través de un mensaje de Myspace en el 2010, y desde entonces han hecho música a distancia compartiendo archivos en Dropbox.
+      </div>
+    </div>
+
+      <img src="img/3.png" class="img-responsive" style="width:100%">
+
+
+    <div style="height:1000px;background-color:khaki;font-size:34px;">
+      <div class="centrado" style="text-align:left;">
+        Some past shows:<br>
+        <br> <span class="fechas">2012</span> - Vice/Indio Beer Tour <span class="lugares">Los Angeles, San Francisco, Chicago, Austin</span>
+        <br> <span class="fechas">2012</span> - Festival Antes de que nos Olviden <span class="lugares">Mexico City</span>
+        <br> <span class="fechas">2013</span> - Vice/Indio Halloween show with Chicano Batman <span class="lugares">San Francisco</span>
+        <br> <span class="fechas">2014</span> - West Coast Tour with Dorotheo <span class="lugares">San Francisco, Portland, Seattle, San Jose, Santa Rosa, Fresno, Olympia, Bainbridge Island</span>
+        <br> <span class="fechas">2017</span> - SXSW Showcase for Cosmica with Y La Bamba <span class="lugares">Austin</span>
+        <br> <span class="fechas">2017</span> - Foro Independencia with Chicano Batman <span class="lugares">Guadalajara</span>
+      </div>
+    </div>
+
+    <div class="parallax" style="background-image: url('img/boton.jpg');"></div>
+
+    <div id="video_overlay" style="height:50%;">
+      <div id="muter" class="centrado">🔊</div>
+    </div>
+
+    <div class="tamano_pantalla" style="background-color:mediumaquamarine;font-size:26px;">
+      <div class="centrado" style="text-align:center;">
+        <a href="http://franciscoymadero.bandcamp.com" target="_blank"><img src="img/bandcamp.png"></a>
+        <br><br><br><br> info/booking:
+        <br>
+        <a href="mailto:carlospesina@gmail.com" target="_blank">carlospesina@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="tv">
+    <div class="screen mute" id="tv"></div>
+  </div>
+
+
+</body>
+
+</html>

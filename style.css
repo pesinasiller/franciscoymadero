@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css?family=Assistant');
+
+body {
+    font-family: 'Assistant', sans-serif;
+    font-size:28px;
+}
+
+/* Mozilla based browsers */
+::-moz-selection {
+       background-color: #000;
+       color: #FFF;
+}
+
+/* Works in Safari */
+::selection {
+       background-color: #000;
+       color: #FFF;
+}
+* {
+  box-sizing: border-box;
+}
+
+a, a:hover, a:visited{
+  text-decoration:none;
+  color:white;
+}
+
+.video-background {
+  background: #000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+
+.video-foreground,
+.video-background iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#vidtop-content {
+  top: 0;
+  color: #fff;
+}
+
+.vid-info {
+  top: 0;
+  right: 0;
+  width: 33%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 1rem;
+  font-family: Avenir, Helvetica, sans-serif;
+}
+
+.vid-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+.vid-info a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  transition: .6s background;
+  border-bottom: none;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .vid-info {
+    width: 50%;
+    padding: .5rem;
+  }
+  .vid-info h1 {
+    margin-bottom: .2rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .vid-info .acronym {
+    display: none;
+  }
+}
+
+.tv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tv .screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: auto;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.tv .screen.active {
+  opacity: 1;
+}
+
+.covers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 300%;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  z-index: 4;
+  /* Full height */
+  height: 50%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+#defaultCanvas0,
+#canvas-holder {
+  left: 0px !important;
+  width: 100% !important;
+}
+
+#muter {
+  color: #fff;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  cursor:pointer;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.centrado {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width:80%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  z-index: 20;
+}
+
+
+.centrado-mobile {
+padding:30% 50px 50px 50px;
+
+  text-align: justify;
+  
+}
+.img-responsive{
+  margin-bottom: -5px !important;
+}
+
+.fechas{
+  font-size: 30px;
+  font-weight: 600;
+}
+.lugares{
+  font-size:20px;
+}
+.lugares a{
+  color: black;
+}
+
+/********************** mobile *********************************/
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
